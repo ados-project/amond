@@ -1,0 +1,16 @@
+{
+  "serviceName": "AD-OS",
+  "contracts": {
+    "MainToken": {
+      "path": "contracts/MainToken.sol",
+      "constructorArguments": [
+      ]
+    },
+    "VestingManager": {
+      "path": "contracts/VestingManager.sol",
+      "constructorArguments": [
+        "${contracts.MainToken.address}"
+      ]
+    }
+  }
+}
